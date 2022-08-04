@@ -5,11 +5,11 @@ interface Props {
     // any props that come into the component
     title:string,
     subtitle:string,
-    imgURL:string
+    imgURL?:string
 }
 
-const Banner: React.FunctionComponent<Props> = (props) => {
-    const {title,subtitle,imgURL} = props
+const Banner: React.FunctionComponent<Props> = ({title,subtitle,imgURL}) => {
+    // const {title,subtitle,imgURL} = props
     const handleOnPlay = ()=>{
         console.log("You clicked the play button")
     }
@@ -18,7 +18,7 @@ const Banner: React.FunctionComponent<Props> = (props) => {
         <h3>{title}</h3>
         <h3>{subtitle}</h3>
         <button onClick={handleOnPlay}>Play</button>
-        <div className={`bg-[url(${imgURL})] w-full h-full absolute bg-cover bg-center`}></div>
+        {/* <div className={`bg-[url(${imgURL})] w-full h-full absolute bg-cover bg-center`}></div> */}
         {/* <Image 
         src = {`${imgURL}`}
         layout="fill"

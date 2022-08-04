@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Banner from '../components/Banner'
+// import Banner from '../components/Banner'
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       </Head>
 
       <h1>Netflix</h1>
-      <Banner title='The Shrek' subtitle='The big green Oger' imgURL="/images/Shrek-5.jpg"/>
+      {/* <Banner title='The Shrek' subtitle='The big green Oger' imgURL="https://www.looper.com/img/uploads/2016/07/Shrek-.jpg"/> */}
       {/* <Nav />     
       <Card /> */}
     </div>
